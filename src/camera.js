@@ -7,6 +7,7 @@ export async function getVideo() {
   try {
     //modern browsers
     video.srcObject = avStream;
+  // eslint-disable-next-line no-unused-vars
   } catch (error) {
     // old browsers
     video.src = window.URL.createObjectURL(avStream);
